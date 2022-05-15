@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Add you code here -->
+        <!-- user -->
+        <!-- Company-restricted Records -->
+        <record model='ir.rule' id='lap_teknisi_user'>
+            <field name='name'>Restricted Record: user</field>
+            <field name='model_id' ref='model_laporan'/>
+           <field name="groups" eval="[(4, ref('kf_lap_teknis.user'))]"/>
+            <field name="domain_force">
+                [('create_uid', '=', user.id)]
+            </field>
+        </record>
+
+        <!-- tokoava_account admin -->
+        <!-- Company-restricted Records -->
+        <record model="ir.rule" id="tokoava_laporan_admin">
+            <field name="name">Restricted Record: Laporan Account User</field>
+            <field name="model_id" ref="model_laporan"/>
+            <field name="groups" eval="[(4, ref('kf_lap_teknis.admin'))]"/>
+            <field name="domain_force">
+                [(1, '=', 1)]
+            </field>
+        </record>
+    
+
+    </data>
+</odoo>

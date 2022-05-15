@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Add you code here -->
+
+        <!-- nama_teknisi tree view -->
+        <record id='nama_teknisi_view_tree' model='ir.ui.view'>
+            <field name='name'>nama_teknisi.view.tree</field>
+            <field name='model'>nama_teknisi</field>
+            <field name='arch' type='xml'>
+                <tree>
+                    <!-- Add your fields here -->
+                    
+                    <field name='name'/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- nama_teknisi form view -->
+        <record id='nama_teknisi_view_form' model='ir.ui.view'>
+            <field name='name'>nama_teknisi.view.form</field>
+            <field name='model'>nama_teknisi</field>
+            <field name='arch' type='xml'>
+                <form>
+                    <sheet>
+                        <group>
+                            <!-- Add your fields here -->
+                            
+                            <field name='name'/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- nama_teknisi search view -->
+        <record id='nama_teknisi_view_search' model='ir.ui.view'>
+            <field name='name'>nama_teknisi.view.search</field>
+            <field name='model'>nama_teknisi</field>
+            <field name='arch' type='xml'>
+                <search string='Search Description'>
+                    <!-- Add your fields here -->
+                    
+                    <field name='name'/>
+                </search>
+            </field>
+        </record>
+
+        <!-- nama_teknisi action window -->
+        <record id='nama_teknisi_action' model='ir.actions.act_window'>
+            <field name='name'>nama_teknisi</field>
+            <field name='type'>ir.actions.act_window</field>
+            <field name='res_model'>nama_teknisi</field>
+            <field name='view_mode'>tree,form</field>
+            <field name='help' type='html'>
+                <p class='oe_view_nocontent_create'>
+                    <!-- Add Text Here -->
+                    Data not found!
+                </p><p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                    You can add new by click new button. 
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

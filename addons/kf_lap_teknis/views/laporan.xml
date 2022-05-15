@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Add you code here -->
+
+        <!-- laporan tree view -->
+        <record id='laporan_view_tree' model='ir.ui.view'>
+            <field name='name'>laporan.view.tree</field>
+            <field name='model'>laporan</field>
+            <field name='arch' type='xml'>
+                <tree>
+                    <!-- Add your fields here -->
+                    <field name="no_wo"/>
+                    <field name="date"/>
+                    <field name="area_id"/>
+                    <field name="mesin_id"/>
+                    <field name="done_with"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- laporan form view -->
+        <record id='laporan_view_form' model='ir.ui.view'>
+            <field name='name'>laporan.view.form</field>
+            <field name='model'>laporan</field>
+            <field name='arch' type='xml'>
+                <form>
+                    <sheet>
+                        <group>
+                            <!-- Add your fields here -->
+                            <field name="no_wo" required="1"/>
+                            <field name="date" required="1"/>
+                            <field name="area_id" required="1"/>
+                            <field name="mesin_id" required="1"/>
+                            <field name="done_with" required="1"/>
+                            <field name="sparepart_ids">
+                                <tree editable="top">
+                                    <field name="sparepart_id"/>
+                                    <field name="masuk"/>
+                                    <field name="digunakan"/>
+                                    <field name="sisa"/>
+                                    <field name="bekas"/>
+                                    <field name="keterangan"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- laporan search view -->
+        <record id='laporan_view_search' model='ir.ui.view'>
+            <field name='name'>laporan.view.search</field>
+            <field name='model'>laporan</field>
+            <field name='arch' type='xml'>
+                <search string='Search Description'>
+                    <!-- Add your fields here -->
+                    <field name="no_wo"/>
+                    <field name="date"/>
+                    <field name="area_id"/>
+                    <field name="mesin_id"/>
+                    <field name="done_with"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- laporan action window -->
+        <record id='laporan_action' model='ir.actions.act_window'>
+            <field name='name'>Laporan</field>
+            <field name='type'>ir.actions.act_window</field>
+            <field name='res_model'>laporan</field>
+            <field name='view_mode'>tree,form,pivot</field>
+            <field name='help' type='html'>
+                <p class='oe_view_nocontent_create'>
+                    <!-- Add Text Here -->
+                    Data not found!
+                </p><p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                    You can add new by click new button. 
+                </p>
+            </field>
+        </record>
+
+        <!-- model.name action window -->
+        <record id="laporan_pivot_action" model="ir.actions.act_window">
+            <field name="name">Laporan Pivot</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">laporan.sparepart</field>
+            <field name="view_mode">pivot</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    <!-- Add Text Here -->
+                </p><p>
+                    <!-- More details about what a user can do with this object will be OK --> 
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Add you code here -->
+
+        <!-- sparepart tree view -->
+        <record id='sparepart_view_tree' model='ir.ui.view'>
+            <field name='name'>sparepart.view.tree</field>
+            <field name='model'>sparepart</field>
+            <field name='arch' type='xml'>
+                <tree>
+                    <!-- Add your fields here -->
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- sparepart form view -->
+        <record id='sparepart_view_form' model='ir.ui.view'>
+            <field name='name'>sparepart.view.form</field>
+            <field name='model'>sparepart</field>
+            <field name='arch' type='xml'>
+                <form>
+                    <sheet>
+                        <group>
+                            <!-- Add your fields here -->
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- sparepart search view -->
+        <record id='sparepart_view_search' model='ir.ui.view'>
+            <field name='name'>sparepart.view.search</field>
+            <field name='model'>sparepart</field>
+            <field name='arch' type='xml'>
+                <search string='Search Description'>
+                    <!-- Add your fields here -->
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- sparepart action window -->
+        <record id='sparepart_action' model='ir.actions.act_window'>
+            <field name='name'>Sparepart</field>
+            <field name='type'>ir.actions.act_window</field>
+            <field name='res_model'>sparepart</field>
+            <field name='view_mode'>tree,form</field>
+            <field name='help' type='html'>
+                <p class='oe_view_nocontent_create'>
+                    <!-- Add Text Here -->
+                    Data not found!
+                </p><p>
+                    <!-- More details about what a user can do with this object will be OK -->
+                    You can add new by click new button. 
+                </p>
+            </field>
+        </record>
+
+    </data>
+</odoo>

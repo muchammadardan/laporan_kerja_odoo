@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Add you code here -->
+
+        <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+        <menuitem id="teknisi_menu_root" name="Teknisi" sequence="1"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="teknisi_laporan_menu_act" name="Laporan" parent="teknisi_menu_root" action="laporan_action" sequence="10"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="teknisi_laporan_pivot_menu_act" name="Laporan Pivot" parent="teknisi_menu_root" action="laporan_pivot_action" sequence="20"/>
+        <!-- This Menu Item Must have a parent -->
+        <menuitem id="teknisi_master_menu_categ" name="Master" parent="teknisi_menu_root" sequence="99"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="teknisi_master_mesin_menu_act" name="Mesin" parent="teknisi_master_menu_categ" action="mesin_action" sequence="10"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="teknisi_master_area_menu_act" name="Area" parent="teknisi_master_menu_categ" action="area_action" sequence="20"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="teknisi_master_alat_menu_act" name="Alat" parent="teknisi_master_menu_categ" action="alat_action" sequence="30"/>
+        <!-- This Menu Item must have a parent and an action -->
+        <menuitem id="teknisi_master_sparepart_menu_act" name="Sparepart" parent="teknisi_master_menu_categ" action="sparepart_action" sequence="40"/>
+
+    </data>
+</odoo>

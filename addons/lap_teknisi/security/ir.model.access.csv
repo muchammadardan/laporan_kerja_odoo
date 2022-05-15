@@ -1,0 +1,21 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+lap_teknisi_nama_teknisi_user,LAP TEKNISI NamaTeknisi User,lap_teknisi.model_nama_teknisi,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_area_user,LAP TEKNISI Area User,lap_teknisi.model_area,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_mesin_user,LAP TEKNISI Mesin User,lap_teknisi.model_mesin,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_alat_user,LAP TEKNISI Alat User,lap_teknisi.model_alat,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_sparepart_user,LAP TEKNISI Sparepart User,lap_teknisi.model_sparepart,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_laporan_user,LAP TEKNISI Laporan User,lap_teknisi.model_laporan,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_laporan_sparepart_user,LAP TEKNISI Laporan Sparepart User,lap_teknisi.model_laporan_sparepart,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_laporan_alat_user,LAP TEKNISI Laporan Alat User,lap_teknisi.model_laporan_alat,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_known_by_user,LAP TEKNISI Known By User,lap_teknisi.model_known_by,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_received_by_user,LAP TEKNISI Received By User,lap_teknisi.model_received_by,lap_teknisi.user,TRUE,FALSE,FALSE,FALSE
+lap_teknisi_area_admin,LAP TEKNISI Area Admin,lap_teknisi.model_area,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE
+lap_teknisi_mesin_admin,LAP TEKNISI Mesin Admin,lap_teknisi.model_mesin,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE
+lap_teknisi_alat_admin,LAP TEKNISI Alat Admin,lap_teknisi.model_alat,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE
+lap_teknisi_sparepart_admin,LAP TEKNISI Sparepart Admin,lap_teknisi.model_sparepart,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE
+lap_teknisi_nama_teknisi_admin,LAP TEKNISI NamaTeknisi Admin,lap_teknisi.model_nama_teknisi,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE
+lap_teknisi_known_by_admin,LAP TEKNISI Known By Admin,lap_teknisi.model_known_by,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE
+lap_teknisi_received_by_admin,LAP TEKNISI Received By Admin,lap_teknisi.model_received_by,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE
+lap_teknisi_laporan_admin,LAP TEKNISI Laporan Admin,lap_teknisi.model_laporan,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE
+lap_teknisi_laporan_sparepart_admin,LAP TEKNISI Laporan Sparepart Admin,lap_teknisi.model_laporan_sparepart,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE
+lap_teknisi_laporan_alat_admin,LAP TEKNISI Laporan Alat Admin,lap_teknisi.model_laporan_alat,lap_teknisi.admin,TRUE,TRUE,TRUE,TRUE

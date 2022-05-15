@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+kf_lap_teknis_area_user,KF LAP TEKNIS Area User,kf_lap_teknis.model_area,kf_lap_teknis.user,TRUE,FALSE,FALSE,FALSE
+kf_lap_teknis_mesin_user,KF LAP TEKNIS Mesin User,kf_lap_teknis.model_mesin,kf_lap_teknis.user,TRUE,FALSE,FALSE,FALSE
+kf_lap_teknis_alat_user,KF LAP TEKNIS Alat User,kf_lap_teknis.model_alat,kf_lap_teknis.user,TRUE,FALSE,FALSE,FALSE
+kf_lap_teknis_sparepart_user,KF LAP TEKNIS Sparepart User,kf_lap_teknis.model_sparepart,kf_lap_teknis.user,TRUE,FALSE,FALSE,FALSE
+kf_lap_teknis_laporan_user,KF LAP TEKNIS Laporan user,kf_lap_teknis.model_laporan,kf_lap_teknis.user,TRUE,TRUE,TRUE,TRUE
+kf_lap_teknis_laporan_sparepart_user,KF LAP TEKNIS Laporan Sparepart user,kf_lap_teknis.model_laporan_sparepart,kf_lap_teknis.user,TRUE,TRUE,TRUE,TRUE
+kf_lap_teknis_area_admin,KF LAP TEKNIS Area Admin,kf_lap_teknis.model_area,kf_lap_teknis.admin,TRUE,TRUE,TRUE,TRUE
+kf_lap_teknis_mesin_admin,KF LAP TEKNIS Mesin Admin,kf_lap_teknis.model_mesin,kf_lap_teknis.admin,TRUE,TRUE,TRUE,TRUE
+kf_lap_teknis_alat_admin,KF LAP TEKNIS Alat Admin,kf_lap_teknis.model_alat,kf_lap_teknis.admin,TRUE,TRUE,TRUE,TRUE
+kf_lap_teknis_sparepart_admin,KF LAP TEKNIS Sparepart Admin,kf_lap_teknis.model_sparepart,kf_lap_teknis.admin,TRUE,TRUE,TRUE,TRUE
