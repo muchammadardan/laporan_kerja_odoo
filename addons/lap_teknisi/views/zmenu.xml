@@ -4,7 +4,7 @@
         <!-- Add you code here -->
 
         <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
-        <menuitem id="teknisi_menu_root" name="Laporan Pekerjaan" sequence="1"/>
+        <menuitem id="teknisi_menu_root" name="Laporan Pekerjaan" web_icon="lap_teknisi,static/description/icon.png" sequence="1"/>
         <!-- This Menu Item must have a parent and an action -->
         <menuitem id="teknisi_laporan_menu_act" name="Laporan" parent="teknisi_menu_root" action="laporan_action" sequence="10"/>
         <!-- This Menu Item must have a parent and an action -->
